@@ -12,7 +12,7 @@ def predict_digit(image_path):
     print("[INFO] Loaded model from disk.")
 
     image = cv2.imread(image_path, 0)      
-    image1 = cv2.resize(image, (28,28))    # For cv2.imshow: dimensions should be 28x28
+    image1 = cv2.resize(image, (28,28))    
     image2 = image1.reshape(1,28,28,1)
 
     cv2.imshow('digit', image1 )
